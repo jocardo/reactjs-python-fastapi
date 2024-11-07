@@ -1,0 +1,145 @@
+/* Estilos para a página de Histórico */
+.history-page .history-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+.history-page .header {
+    display: flex; /* Alinha o título e a busca na mesma linha */
+    justify-content: space-between; /* Dá um espaçamento entre os itens */
+    align-items: center; /* Alinha verticalmente */
+    margin-bottom: 15px; /* Espaço entre o header e a tabela */
+}
+.history-page .history-title {
+    color: #d9534f;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline-block; /* Para ficar alinhado com a busca */
+    width: 100%; /* Espaço para título */
+}
+
+.history-page .search-container {
+    background-color: #f9f9f9;
+    display: flex; /* Flexbox para os ícones e o campo de busca */
+    align-items: center; /* Alinha os ícones e o input verticalmente */
+    justify-content: flex-end; /* Alinha o conteúdo da pesquisa à direita */
+    position: relative; /* Para os ícones ficarem dentro do campo de input */
+    text-align: right; /* Garante que o conteúdo do input seja alinhado à direita */
+    width: 100%; /* Garantir que ocupe toda a largura disponível */
+}
+
+.history-page .search-input {
+    padding-left: 30px; /* Espaço para o ícone de lupa */
+    padding-right: 30px; /* Espaço para o ícone de X */
+    width: 100%; /* Toma o espaço restante */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.history-page .search-icon, .history-page .clear-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 16px;
+}
+
+.history-page .search-icon {
+    left: 30px;
+}
+
+.history-page .clear-icon {
+    right: 30px;
+    cursor: pointer;
+}
+
+.history-page .clear-icon:hover {
+    color: #333;
+}
+
+/* Estilos para a tabela */
+.history-page .history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-page .history-table th,
+.history-page .history-table td {
+    padding: 8px;
+}
+
+.history-page .history-table th {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid  #aaaaaa;
+    box-shadow: 0px 2px #aaaaaa;
+}
+.history-page .history-table td {
+    text-align: center;
+    border-bottom: 1px solid  #aaaaaa;
+    box-shadow: 0px 2px #aaaaaa;
+}
+
+/* Estilos para a paginação */
+.history-page .pagination {
+    display: flex;
+    justify-content: flex-end; /* Alinha a paginação à direita */
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.history-page .pagination span {
+    color: red;
+}
+
+.history-page .pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.history-page .items-per-page {
+    margin-right: 10px;
+}
+
+.pagination-controls button {
+    background: none;
+    border: none;
+    color: inherit; /* Mantém a cor do texto ou ícone */
+    font-size: 16px; /* Ajuste o tamanho conforme necessário */
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.pagination-controls button:disabled {
+    color: #ccc; /* Ajusta a cor do botão desabilitado */
+    cursor: not-allowed;
+}
+
+
+.items-per-page select {
+    background: transparent; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    appearance: none;
+    padding: 5px 30px 5px 5px; /* Adiciona espaço à direita para a seta */
+    color: inherit; /* Mantém a cor do texto */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.items-per-page select:focus {
+    outline: none; /* Remove a borda ao focar */
+}
+
+
+.items-per-page select option {
+    background-color: white; /* Cor do fundo das opções ao selecionar */
+    color: black; /* Cor do texto nas opções */
+    appearance: none;
+}
+

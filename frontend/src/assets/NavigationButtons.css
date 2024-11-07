@@ -1,0 +1,27 @@
+nav {
+    background-color: white;
+    padding: 1px;
+    margin-bottom: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 17px ;
+    border: blue 1px solid;
+    color: blue;
+}
+
+nav a.active {
+    font-weight: bold;
+    
+}
