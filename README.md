@@ -25,7 +25,7 @@ Este projeto consiste em uma aplicação Fullstack para buscar filmes usando uma
 
 1. **Clone o repositório**:
    ```bash
-   git clone [https://github.com/seuusuario/seurepositorio.git](https://github.com/jocardo/reactjs-python-fastapi)
+   git clone https://github.com/jocardo/reactjs-python-fastapi
    cd seurepositorio
 
 
